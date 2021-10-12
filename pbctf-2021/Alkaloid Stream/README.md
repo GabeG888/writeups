@@ -46,9 +46,9 @@ This can be confirmed by using ctrl+f in the text editor:
 
 Remember the array is shuffled so the 0 won't be at the very end.
 
-So the other value in that pair of numbers is the last key value. Because the zero, which we know is the fake value, was in the second location (index 1), we know the last value of the keystream is a 0 because the real value is in index 0. Now we have to find the next to last number. Because each fake value is the next 200 real values xored, the second to last fake value must be the same as the last real value. The third to last fake value is the last two real values xored. We can continue this pattern all the way to the beginning, always using the next 200 numbers. 
+So the other value in that pair of numbers is the last key value. Because the zero, which we know is the fake value, is in the second location (index 1), we know the last value of the keystream is a 0 because the real value is in index 0. Now we have to find the second to last number. Because each fake value is the next 200 real values xored, the second to last fake value must be the same as the last real value. The third to last fake value is the last two real values xored. We can continue this pattern all the way to the beginning, always using the next 200 numbers. 
 
-Now unless you want to do tens of thousands of xor operations by hand, we need to implement this in python. I just used the same file we were given and wrote my code at the bottom.
+Now, unless you want to do tens of thousands of xor operations by hand, we need to implement this in python. I just used the same file we were given and wrote my code at the bottom.
 
 The encrypted flag is encrypted in hex so I used CyberChef to turn it into binary. 
 
