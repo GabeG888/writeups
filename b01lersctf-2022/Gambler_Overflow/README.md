@@ -1,4 +1,4 @@
-# Gambler_Supreme
+# Gambler_Overflow
 ## Description
 This challenge gives you an ELF file and remote server that ask you to guess random strings to get coins. Getting enough coins gives you the flag. This time, the random seed is not static.
 ## Solution
